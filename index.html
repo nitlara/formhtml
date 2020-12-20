@@ -1,17 +1,77 @@
 <!DOCTYPE html>
 <html>
     <head>
+         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+    crossorigin="anonymous"/>
     </head>
     <body>
-        <form>
-        <div class="row">
-            <div class="col">
-            <input type="text" class="form-control" placeholder="First name">
-            </div>
-            <div class="col">
-            <input type="text" class="form-control" placeholder="Last name">
-            </div>
-        </div>
-        </form>
+        <div class="container">
+            <form>
+                <div>
+                    <h1>Payment form example</h1>
+                </div>                
+
+                <div class="form-row">
+                    <div class="form-group col-5">
+                        <label for="inputEmail4">Card #</label>
+                        <input type="number" class="form-control" id="numbercard" placeholder="XXXXXXXXXXXXXXXX">
+                    </div>
+                    <div class="form-group col">
+                        <label for="inputPassword4">CVC #</label>
+                        <input type="number" class="form-control" id="CVC" placeholder="0000">
+                    </div>
+                    <div class="form-group col">
+                        <label for="inputPassword4">Amount</label>
+                        <input type="number" class="form-control" id="Amunt$" placeholder="Amount">
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="form-group col">
+                        <label for="inputAddress">First Name</label>
+                        <input type="text" class="form-control" id="inputAddress" placeholder="">
+                    </div>
+                    <div class="form-group col">
+                        <label for="inputAddress">Last Name</label>
+                        <input type="text" class="form-control" id="inputAddress" placeholder="">
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="form-group col">
+                        <label for="inputAddress">City</label>
+                        <input type="text" class="form-control" id="inputAddress" placeholder="">
+                    </div>
+                     <select class="custom-select mr-sm-2 for-group col" id="inlineState">
+                            <label for="inlineState">State</label>
+                            <option selected id="inlineState">Pick a state</option>
+                            <option value="1">One</option>
+                            <option value="2">Two</option>
+                            <option value="3">Three</option>
+                        </select>
+                     <div class="form-group col">
+                        <label for="inputCP">Postal Code</label>
+                        <input type="text" class="form-control" id="inputAddress" placeholder="">
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="form-group col-6 strong">
+                    We accept:
+                    </div>
+                    <div class="form-group col-6">
+                        <label for="comment">Message</label>
+                            <textarea class="form-control" rows="5" id="comment"></textarea>
+                            <small id="comment" class="form-text text-muted">
+                                Add any notes here
+                            </small>
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="form-group align-left">
+                        <button type="submit" class="btn btn-primary">Cancel</button>
+                        <button type="submit" class="btn btn-primary">Send</button>
+                    </div>
+                </div>
+    </form>
+</div>
     </body>
 </html>
